@@ -1,0 +1,115 @@
+.ctaSection {
+  background: linear-gradient(135deg, rgba(249, 87, 42, 0.1), rgba(255, 138, 5, 0.1));
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  border: 1px solid rgba(255, 155, 5, 0.2);
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.ctaContent h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ddd6cb;
+  margin-bottom: 1rem;
+}
+
+.ctaContent p {
+  font-size: 1.2rem;
+  color: #ddd6cb;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.benefit {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #ddd6cb;
+}
+
+.benefitIcon {
+  color: #ff9b05;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ctaPrimary {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #f9572a, #ff9b05);
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.ctaPrimary:hover {
+  background: linear-gradient(90deg, #fd4715, #f9b241);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(249, 87, 42, 0.3);
+}
+
+.ctaSecondary {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: #ff9b05;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid #ff9b05;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.ctaSecondary:hover {
+  background: #ff9b05;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 155, 5, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ctaPrimary,
+  .ctaSecondary {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .ctaContent h3 {
+    font-size: 1.6rem;
+  }
+
+  .ctaContent p {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,55 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  color: #ddd6cb;
+  font-size: 1.5rem;
+  max-width: 50rem;
+  width: 100%;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, #f9572a, #ffc905);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .section h2 {
+    font-size: 2.2rem;
+  }
+
+  .section {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    font-size: 1.2rem;
+    margin: 2rem auto;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    font-size: 1.1rem;
+    width: 95%;
+    margin: 1.5rem auto;
+  }
+
+  .section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+}
